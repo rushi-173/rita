@@ -1,0 +1,188 @@
+.story-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  animation: slideInUp 0.3s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.story-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 20px 16px 16px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+}
+
+.story-progress-container {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 16px;
+}
+
+.story-progress-bar {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1px;
+  overflow: hidden;
+  min-width: 2px;
+}
+
+.story-progress-fill {
+  height: 100%;
+  background: #fff;
+  transition: width 0.1s linear;
+  border-radius: 1px;
+}
+
+.story-user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.story-user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #fff;
+}
+
+.story-user-username {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.story-indicator {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+.story-close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.story-media {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.story-image {
+  /* Image specific styles if needed */
+}
+
+.story-video {
+  /* Video specific styles */
+  outline: none;
+}
+
+.story-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.story-loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.story-navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 5;
+}
+
+.story-nav-left,
+.story-nav-right {
+  flex: 1;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.story-nav-left:active,
+.story-nav-right:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .story-header {
+    padding-top: env(safe-area-inset-top, 20px);
+  }
+
+  .story-viewer {
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+}
+
+/* Prevent scrolling on body when story viewer is open */
+body.story-viewer-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}

@@ -1,0 +1,94 @@
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app {
+  height: 100dvh;
+  width: 100dvw;
+  max-width: 650px;
+  position: relative;
+  margin: 0 auto;
+  background: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.app-header {
+  background: #fff;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 16px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+  font-family: "Billabong", cursive;
+}
+
+.app-main {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 12px 16px;
+    padding-top: env(safe-area-inset-top, 12px);
+  }
+
+  .app-header h1 {
+    font-size: 20px;
+  }
+}
+
+/* Prevent body scroll when story viewer is open */
+body.story-viewer-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}

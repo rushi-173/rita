@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "user": {
+      "username": "john_doe",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    },
+    "stories": [
+      {
+        "id": "story_1_1",
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=700&fit=crop",
+        "timestamp": "2024-01-15T10:30:00Z"
+      },
+      {
+        "id": "story_1_2",
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=700&fit=crop",
+        "timestamp": "2024-01-15T10:35:00Z"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "user": {
+      "username": "jane_smith",
+      "avatar": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=150&h=150&fit=crop&crop=face"
+    },
+    "stories": [
+      {
+        "id": "story_2_1",
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=700&fit=crop",
+        "timestamp": "2024-01-15T11:45:00Z"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "user": {
+      "username": "travel_lover",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    },
+    "stories": [
+      {
+        "id": "story_3_1",
+        "type": "video",
+        "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        "timestamp": "2024-01-15T12:15:00Z"
+      },
+      {
+        "id": "story_3_2",
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=700&fit=crop",
+        "timestamp": "2024-01-15T12:20:00Z"
+      },
+      {
+        "id": "story_3_3",
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=700&fit=crop",
+        "timestamp": "2024-01-15T12:25:00Z"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "user": {
+      "username": "nature_pics",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+    },
+    "stories": [
+      {
+        "id": "story_4_1",
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=700&fit=crop",
+        "timestamp": "2024-01-15T13:20:00Z"
+      },
+      {
+        "id": "story_4_2",
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=700&fit=crop",
+        "timestamp": "2024-01-15T13:25:00Z"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "user": {
+      "username": "city_explorer",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
+    },
+    "stories": [
+      {
+        "id": "story_5_1",
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=700&fit=crop",
+        "timestamp": "2024-01-15T14:10:00Z"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "user": {
+      "username": "food_blogger",
+      "avatar": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=150&h=150&fit=crop&crop=face"
+    },
+    "stories": [
+      {
+        "id": "story_6_1",
+        "type": "video",
+        "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+        "timestamp": "2024-01-15T15:30:00Z"
+      },
+      {
+        "id": "story_6_2",
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=700&fit=crop",
+        "timestamp": "2024-01-15T15:35:00Z"
+      }
+    ]
+  }
+]
